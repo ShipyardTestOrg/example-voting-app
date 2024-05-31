@@ -1,4 +1,4 @@
-Example Voting App
+Example Voting App - pr
 =========
 
 A simple distributed application running across multiple Docker containers.
