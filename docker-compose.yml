@@ -24,7 +24,7 @@ services:
 
   result:
     labels:
-      shipyard.route: '/'
+      shipyard.route: '/result'
     build: ./result
     # use nodemon rather than node for local dev
     command: nodemon server.js
