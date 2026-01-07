@@ -8,6 +8,7 @@ services:
     labels:
       shipyard.route: '/'
       shipyard.primary-route: true
+      shipyard.depends_on: 'db,redis'
     build: ./vote
     # use python rather than gunicorn for local dev
     command: python app.py
