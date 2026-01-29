@@ -12,7 +12,7 @@ services:
     # use python rather than gunicorn for local dev
     command: python app.py
     depends_on:
-      redis:
+      redis_admin:
         condition: service_healthy 
     volumes:
      - ./vote:/app
