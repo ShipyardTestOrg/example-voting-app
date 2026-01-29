@@ -78,6 +78,17 @@ services:
     ports:
       - 5432
 
+  admin_api:
+    container_name: admin-api
+    build: '.'
+    ports:
+      - '8878:8878'
+  nginx:
+    image: nginx:latest
+    depends_on:
+      admin_api:
+        condition: service_healthy
+
 volumes:
   db-data:
 
