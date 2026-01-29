@@ -77,12 +77,7 @@ services:
       - back-tier
     ports:
       - 5432
-
-  admin_api:
-    container_name: admin-api
-    build: '.'
-    ports:
-      - '8878:8878'
+      
   nginx:
     image: nginx:latest
     depends_on:
